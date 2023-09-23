@@ -1,0 +1,248 @@
+{
+	"id": "ff5068bb-f1f1-465c-9435-71398a1767bb",
+	"name": "New Collection",
+	"timestamp": "2023-09-23T07:33:50.519Z",
+	"collection_id": "27828865-3e13e94f-c57a-454d-a649-b34acdac14e4",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 8,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-09-23T07:33:47.785Z",
+	"totalFail": 2,
+	"results": [
+		{
+			"id": "69aa37cf-113b-4f6a-83b4-053d04f90048",
+			"name": "https://reqres.in/api/users/2",
+			"url": "https://reqres.in/api/users/2",
+			"time": 108,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				108
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "807e3de1-5459-425b-9bd4-757c891b6610",
+			"name": "Get all Posts",
+			"url": "https://jsonplaceholder.typicode.com/posts",
+			"time": 21,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				21
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "5af7f292-3e73-4a23-b7f6-79fb9f76579d",
+			"name": "Get single Post",
+			"url": "https://jsonplaceholder.typicode.com/posts/1",
+			"time": 25,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				25
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "4ed2949b-0900-4917-891d-7302b549e17d",
+			"name": "Get comment",
+			"url": "https://jsonplaceholder.typicode.com/posts/1/comments",
+			"time": 20,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				20
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "232f1bf7-fd10-48b6-af53-744e7e20825d",
+			"name": "Add Post",
+			"url": "https://jsonplaceholder.typicode.com/posts",
+			"time": 602,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				602
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "5ff3a5b6-5805-46af-90d6-f86528bd6b20",
+			"name": "Update post",
+			"url": "https://jsonplaceholder.typicode.com/posts/1",
+			"time": 570,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				570
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": false
+				}
+			]
+		},
+		{
+			"id": "55a15ed5-8d0e-4e98-86eb-844e9399b1c5",
+			"name": "Delete Post",
+			"url": "https://jsonplaceholder.typicode.com/posts/1",
+			"time": 586,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				586
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1932,
+	"collection": {
+		"requests": [
+			{
+				"id": "69aa37cf-113b-4f6a-83b4-053d04f90048",
+				"method": "GET"
+			},
+			{
+				"id": "807e3de1-5459-425b-9bd4-757c891b6610",
+				"method": "GET"
+			},
+			{
+				"id": "5af7f292-3e73-4a23-b7f6-79fb9f76579d",
+				"method": "GET"
+			},
+			{
+				"id": "4ed2949b-0900-4917-891d-7302b549e17d",
+				"method": "GET"
+			},
+			{
+				"id": "232f1bf7-fd10-48b6-af53-744e7e20825d",
+				"method": "POST"
+			},
+			{
+				"id": "5ff3a5b6-5805-46af-90d6-f86528bd6b20",
+				"method": "PUT"
+			},
+			{
+				"id": "55a15ed5-8d0e-4e98-86eb-844e9399b1c5",
+				"method": "DELETE"
+			}
+		]
+	}
+}
